@@ -16,9 +16,9 @@ if uploaded_file is not None:
     df_company = pd.read_csv(uploaded_file)
 
     # Load model and tokenizer
-    model = AutoModelForSeq2SeqLM.from_pretrained("TracyWu32/t5small-cnn-BO")
     tokenizer = AutoTokenizer.from_pretrained("t5-small")
-
+    model = AutoModelForSeq2SeqLM.from_pretrained("TracyWu32/t5small-cnn-BO-finetuned")
+    
     # Generate summaries
     summaries = []
     for profile in df_company.Profile:
