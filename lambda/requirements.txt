@@ -1,0 +1,8 @@
+pandas
+numpy
+transformers
+fastapi
+boto3
+mangum
+uvicorn
+torch
